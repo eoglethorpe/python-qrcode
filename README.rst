@@ -72,6 +72,12 @@ is.
 The ``border`` parameter controls how many boxes thick the border should be
 (the default is 4, which is the minimum according to the specs).
 
+To save an image to local disk (.svg in this instance):
+    img = qrcode.make('all teh qrcodes')
+    imgpath = /this/is/the/path/to/myimg.svg'
+    with open(imgpath,'w+') as imgfile:
+        img.save(imgfile,'SVG')
+
 Other image factories
 =====================
 
